@@ -1,0 +1,123 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+  "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  
+  --colors-brand-primary: #F2B705;
+  --colors-brand-secondary: #FFDEA0;
+  
+  --colors-components-button-primary-hover: #B78B14;
+  --colors-components-button-primary: #FFDEA0;
+  --colors-components-button-secondary: #3B383E;
+  --colors-components-button-secondary: #211F26;
+  --colors-components-input-focused: #FFDEA0;
+  --colors-components-input-unfocused: rgba(255,222,160,0.55);
+  
+  --colors-off-white: #FFF1D5;
+  
+  --colors-surface-primary: #3B383E;
+  --colors-surface-secondary: #211F26;
+  --colors-surface-overlay: rgb(0, 0, 0, 0.5);
+  
+  font-size: 15px; /* Assuming base font size is 16px, this sets it to 15px */
+
+  --font-display-medium: 2rem; /* 36px / 16 */
+  --font-display-small: 1.5rem; /* 28px / 16 */
+
+  --font-headline-large: 2rem; /* 32px / 16 */
+  --font-headline-medium: 1.75rem; /* 28px / 16 */
+  --font-headline-small: 1.5rem; /* 24px / 16 */
+
+  --font-title-large: 1.375rem; /* 22px / 16 */
+  --font-title-medium: 1rem; /* 16px / 16 */
+  --font-title-small: 0.875rem; /* 14px / 16 */
+
+  --font-label-large: 1.35rem; /* 24px / 16 */
+  --font-label-medium: 1.1rem; /* 18px / 16 */
+  --font-label-small: 0.75rem; /* 12px / 16 */
+
+  --font-body-large: 1.125rem; /* 18px / 16 */
+  --font-body-medium: 0.95rem; /* 16px / 16 */
+  --font-body-small: 0.875rem; /* 14px / 16 */
+
+  --spacing-padding-large: 1.4rem;
+  --spacing-padding-medium: 1rem;
+  --spacing-padding-small: 0.5rem;
+  --spacing-padding-tiny: 0.15rem;
+
+  --shadow-filter : drop-shadow(0 6px 12px var(--colors-surface-secondary)); 
+  --shadow-filter-bright : drop-shadow(0 6px 12px var(--colors-surface-primary)); 
+  }
+
+  /* Remove default styles */
+input {
+  appearance: none;  /* Remove browser-specific styling */
+  -webkit-appearance: none;  /* For Webkit browsers */
+  -moz-appearance: none;  /* For Firefox */
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+  /* Remove default styles */
+  textarea {
+    appearance: none;  /* Remove browser-specific styling */
+    -webkit-appearance: none;  /* For Webkit browsers */
+    -moz-appearance: none;  /* For Firefox */
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+
+  } */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--colors-off-white);
+}
+
+.body{
+  background-color: var(--colors-surface-primary);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.header{
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-padding-small);
+  font-size: var(--font-display-medium);
+  position: relative;
+}
+
+.profile{
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}

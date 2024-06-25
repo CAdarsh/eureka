@@ -1,0 +1,167 @@
+.Card{
+    background-color: var(--colors-surface-secondary);
+  }
+  
+  .dashboard-card {
+    min-height: calc(100vh - (var(--spacing-padding-small) * 4 + 55px));
+  }
+  .dashboard-card.placeholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  } 
+
+  .click-prompt{
+    font-size: var(--font-display-small);
+    width: 100%;
+    top: -120%;
+    left: -450%;
+    gap: var(--spacing-padding-small);
+    position: absolute;
+  }
+  
+  .click-prompt .curve{
+    margin-top: 30%;
+  }
+  .click-prompt div{
+    white-space: nowrap;   
+  }
+
+  .btn {
+    background-color: var(--colors-components-input-focused);
+    padding: calc(var(--spacing-padding-medium));
+    border-radius: 50%;
+  }
+
+  .cross.btn{
+    width: calc(25px + 2 * var(--spacing-padding-medium));
+  }
+
+  .fixed-btn {
+    position: absolute;
+    right: 10vw;
+    bottom: 6vh;
+  }
+
+  .cross-btn {
+    transform: rotate(45deg);
+  }
+
+  .modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--colors-surface-overlay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-idea-modal {
+    background-color: var(--colors-surface-secondary);
+    font-size: var(--font-label-medium);
+    width: 60vw;
+    max-width: 800px;
+    border-radius: 21px; 
+    padding: var(--spacing-padding-large) var(--spacing-padding-large); 
+    gap: var(--spacing-padding-small);
+    filter: var(--shadow-filter);
+  }
+
+  .add-idea-modal .input {
+    color: var(--colors-components-input-focused);
+    width: 100%;
+    font-size: var(--font-label-large);
+  }
+
+  .add-idea-modal .modal-options {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-idea-modal .checkbox-cont {
+    gap: 4px;
+    font-size: calc(var(--font-label-medium) + 5px);
+    align-items: center;
+  }
+
+  .add-idea-modal .btn-cont{
+    gap: var(--spacing-padding-medium);
+  }
+
+  .checkbox {
+    border: 2px solid var(--colors-components-input-focused);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: var(--spacing-padding-tiny);
+  }
+
+
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .labelled-btn {
+    padding: var(--spacing-padding-small) var(--spacing-padding-medium);
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  .labelled-btn:hover{
+    cursor: pointer;
+  }
+
+  .labelled-btn.primary {
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: var(--colors-components-button-primary);
+    color: var(--colors-surface-secondary);
+  }
+
+  .labelled-btn.primary:hover {
+    background-color: #c29543;
+  }
+
+  .labelled-btn.secondary {
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: var(--colors-brand-secondary);
+    background-color: var(--colors-surface-primary);
+  }
+
+  .labelled-btn.secondary:hover {
+    background-color: #2c292e;
+  }
+
+  .red {
+    background-color: #df2525;
+    color: rgb(255, 230, 230);
+  }
+
+  .red:hover {
+    background-color: #ba1b1b;
+    color: rgb(255, 230, 230);
+  }
+
+  .idea-footer {
+    justify-content: flex-end;
+  }
